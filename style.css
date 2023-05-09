@@ -5,10 +5,11 @@
     box-sizing: border-box;
 }
 .about-section{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: static;
+    margin: 100px auto;
+}
+.slider{
+  margin: 100px auto;
 }
   button {
    border:none;
@@ -42,7 +43,7 @@
   margin-bottom: 10px;
   padding: 10px;
 }
-i{
+.fa-store,.fa-ticket,.fa-money-check,.fa-calendar-days,.fa-briefcase{
   font-size: 45px;
   color: #8D1A37;
   padding-left: 10px;
@@ -55,4 +56,57 @@ a{
   font-weight: bold;
   background-color: #8D1A37 !important;
   color: #fff !important;
+}
+
+/* carousel */
+body{
+  background-color: #F3F3F3;
+}
+.splide__progress {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 80%;
+  height: 12px;
+  background-color: #ddd;
+  border-radius: 10px;
+  transform: translate(-50%);
+}
+.splide__progress__bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12px !important;
+  background-color: #8d1a37 !important;
+  width: 20%;
+  border-radius: 10px;
+}
+
+.splide__progress__number {
+  position: absolute;
+  left: 100%;
+  transform: translateX(-50%);
+  font-size: 9px;
+  font-weight: bold;
+  color: #8d1a37 !important;
+  background: #fff;
+  border-radius: 10px;
+  padding: 0px 20px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+}
+.splide__list {
+    text-align: center;
+    margin-bottom: 50px !important;
+}
+.splide__arrows a{
+  background-color: #8d1a37 !important;
+  height: 3em;
+  width: 3em;
+}
+.splide__slide{
+  margin-bottom: 50px !important;
+}
+.fa-chevron-left,.fa-chevron-right{
+  color: #F3F3F3;
+  font-size: 25px;
 }
