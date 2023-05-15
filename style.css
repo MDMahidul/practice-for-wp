@@ -110,3 +110,71 @@ body{
   color: #F3F3F3;
   font-size: 25px;
 }
+
+/* navbar css */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--theme-font);
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+:root{
+    --theme-btn-color:  #8E1B3E;
+    --theme-font: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+/* design navebar */
+nav{
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+    height: 78px !important;
+}
+.nav-link{
+    margin-right: 40px;
+    font-size: 12px;
+}
+.nav-btn{
+    background-color: var(--theme-btn-color);
+    color: #fff;
+    padding: 8px 13px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+.left-nav-btn{
+    background-color: #fff;
+    filter: drop-shadow(0px 3.4px 3.4px rgba(0, 0, 0, 0.161));
+    padding: 11px 12px;
+    margin-right: 45px;
+  font-size: 10px;
+  border-radius: 10px;
+}
+.toggle-icon {
+    color: #FFC828;
+}
+
+.dropdown-toggle[aria-expanded="true"]::after {
+  content: none;
+}
+
+.dropdown-toggle[aria-expanded="false"]::after {
+  content: none;
+}
+.dropdown-menu{
+    margin-top: 20px !important;
+    font-size: 12px;
+    border: none;
+}
+.ln-btn {
+  /* CSS styles for the normal button */
+  color: #D6D6D6;
+}
+
+.ln-btn.active {
+  /* CSS styles for the active button */
+  background-color: #8E1B3E;
+  padding: 8px 12px;
+  color: #ffffff;
+  border-radius: 5px;
+}

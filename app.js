@@ -48,3 +48,35 @@ document.addEventListener( 'DOMContentLoaded', function () {
 
   splide.mount();
 } );
+
+
+/* navbar js */
+document.addEventListener("DOMContentLoaded", function () {
+  var dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+
+  dropdownToggles.forEach(function (dropdownToggle) {
+    dropdownToggle.addEventListener("click", function () {
+      var faSolid = this.querySelector(".fa-solid");
+      if (faSolid.classList.contains("fa-chevron-down")) {
+        faSolid.classList.remove("fa-chevron-down");
+        faSolid.classList.add("fa-chevron-up");
+      } else {
+        faSolid.classList.remove("fa-chevron-up");
+        faSolid.classList.add("fa-chevron-down");
+      }
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var buttons = document.querySelectorAll(".ln-btn");
+
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      buttons.forEach(function (btn) {
+        btn.classList.remove("active");
+      });
+      this.classList.add("active");
+    });
+  });
+});
