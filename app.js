@@ -51,6 +51,20 @@ document.addEventListener( 'DOMContentLoaded', function () {
 
 
 /* navbar js */
+window.addEventListener('scroll',()=>{
+  var navbar = document.querySelector('.navbar');
+  var scrollNavImage = document.getElementById('navLogo');
+  if(window.scrollY > 0)
+  {
+    navbar.classList.add('transparent', 'scrolledNav-item');
+    scrollNavImage.src='../img/logo-w.png'
+
+  }else{
+    navbar.classList.remove('transparent', 'scrolledNav-item');
+    scrollNavImage.src='./img/logo.png'
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   var dropdownToggles = document.querySelectorAll(".dropdown-toggle");
 
