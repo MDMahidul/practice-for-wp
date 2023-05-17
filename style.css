@@ -199,3 +199,43 @@ nav{
 }
 
 /* footer */
+.footer-section{
+  padding-top: 76px;
+  padding-bottom: 72px;
+  background: #fff;
+  filter: drop-shadow(0px -20px 20px rgba(0, 0, 0, 0.071));
+}
+footer ul li{
+  list-style:  none;
+}
+.footer-logo{
+  width: 118px;
+  height: 58px;
+  margin-bottom: 64px;
+}
+.footer-heading{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #707070;
+}
+.footer-link{
+  font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #707070;
+}
+.footer-store-img{
+  margin-bottom: 13px;
+}
+.footer-social-icon  i{
+  font-size: 30px;
+  margin-left: 15px;
+  color: #8E1B3E;
+}
+.paymemt img{
+  height: 34px;
+  padding-right: 10px;
+  border-right: 2px solid #707070;
+  
+}
